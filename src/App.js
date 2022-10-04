@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { light } from "./styles/Theme";
 
 import Navigation from "./components/navigation/Navigation";
+import Footer from "./components/footer/footer";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </ThemeProvider>
     </>
   );

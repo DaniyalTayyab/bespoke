@@ -15,6 +15,7 @@ export const Container = styled.div`
   padding: 1rem;
   box-shadow: 1px 1px 10px 15px rgba(244, 244, 240, 0.5);
   border-radius: 5px;
+  margin: 2rem 0;
 `;
 
 export const Title = styled.h2`
@@ -22,6 +23,7 @@ export const Title = styled.h2`
 `;
 
 export const IconsContainer = styled.div`
+  height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;

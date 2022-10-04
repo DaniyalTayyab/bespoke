@@ -8,7 +8,7 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
 
-  background-color: ${(props) => props.theme.grey};
+  background-color: #ffffff;
   padding: 3rem 0;
 `;
 
@@ -45,7 +45,7 @@ export const ToolsContainer = styled.div`
   width: 100%;
   margin-top: 5rem;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  row-gap: 3rem;
+  column-gap: 2rem;
 `;
