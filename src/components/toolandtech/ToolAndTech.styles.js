@@ -29,15 +29,21 @@ export const IconsContainer = styled.div`
   align-items: center;
 
   flex-wrap: wrap;
+
+  /* background-color: pink; */
 `;
 
 export const Icon = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   margin: 1rem;
-  padding: 1.5rem;
-  border: 1px solid #eef3f6;
   border-radius: 5px;
 
   img {
-    width: 30px;
+    width: 8rem;
+  }
+
+  @media (max-width: 770px) {
+    width: 5rem;
   }
 `;

@@ -10,6 +10,8 @@ import {
   SecondRow,
   Copyright,
   SocailContainer,
+  ColumnOneWrapper,
+  ColumnWrapper,
 } from "./footer.styles";
 
 import Button from "../button/Button";
@@ -31,54 +33,60 @@ const Footer = () => {
     <ThemeProvider theme={dark}>
       <Section>
         <FirstRow>
-          <ColumnOne>
-            <img src={logo} alt="logo" />
-            <p>
-              We nurture ecosystems of success by harnessing intelligent
-              technologies and capitalizing on human ingenuity.
-            </p>
-            <h4>Join our mailing list</h4>
-            <form onSubmit={handleForm}>
-              <input type="text" placeholder="Full name" />
-              <input type="email" placeholder="Email" /> <br />
-              <Button type="submit" style={{ color: "#ffffff" }}>
-                Submit
-              </Button>
-            </form>
-          </ColumnOne>
-          <Column>
-            <h3>Company</h3>
-            <ul>
-              <li>About</li>
-              <li>Life at TechiLab</li>
-              <li>Careers</li>
-              <li>Contact</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </Column>
-          <Column>
-            <h3>Services</h3>
-            <ul>
-              <li>Cloud</li>
-              <li>Data</li>
-              <li>Careers</li>
-              <li>Bespoke</li>
-            </ul>
-          </Column>
-          <Column>
-            <h3>Solutions</h3>
-            <ul>
-              <li>Shopper value</li>
-              <li>C-Analytics</li>
-            </ul>
+          <ColumnOneWrapper>
+            <ColumnOne>
+              <img src={logo} alt="logo" />
+              <p>
+                We nurture ecosystems of success by harnessing intelligent
+                technologies and capitalizing on human ingenuity.
+              </p>
+              <h4>Join our mailing list</h4>
+              <form onSubmit={handleForm}>
+                <div>
+                  <input type="text" placeholder="Full name" />
+                </div>
+                <input type="email" placeholder="Email" /> <br />
+                <Button type="submit" style={{ color: "#ffffff" }}>
+                  Submit
+                </Button>
+              </form>
+            </ColumnOne>
+          </ColumnOneWrapper>
+          <ColumnWrapper>
+            <Column>
+              <h3>Company</h3>
+              <ul>
+                <li>About</li>
+                <li>Life at TechiLab</li>
+                <li>Careers</li>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </Column>
+            <Column>
+              <h3>Services</h3>
+              <ul>
+                <li>Cloud</li>
+                <li>Data</li>
+                <li>Careers</li>
+                <li>Bespoke</li>
+              </ul>
+            </Column>
+            <Column>
+              <h3>Solutions</h3>
+              <ul>
+                <li>Shopper value</li>
+                <li>C-Analytics</li>
+              </ul>
 
-            <h3 style={{ marginTop: "4rem" }}>Resources</h3>
-            <ul>
-              <li>Blog</li>
-              <li>Case Studies</li>
-              <li>News</li>
-            </ul>
-          </Column>
+              <h3 style={{ marginTop: "4rem" }}>Resources</h3>
+              <ul>
+                <li>Blog</li>
+                <li>Case Studies</li>
+                <li>News</li>
+              </ul>
+            </Column>
+          </ColumnWrapper>
         </FirstRow>
         <SecondRow>
           <Copyright>

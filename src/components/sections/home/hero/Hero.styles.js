@@ -93,6 +93,11 @@ export const TextSection = styled.div`
   }
 
   @media (max-width: 410px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 70%;
     span {
       font-size: 3rem;
     }

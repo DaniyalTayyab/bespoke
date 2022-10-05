@@ -20,8 +20,8 @@ const Home = () => {
       <Experience />
       <PeopleDriven />
       <ToolsTechnology />
-      {/* <Faq />
-      <Contact /> */}
+      <Faq />
+      <Contact />
     </>
   );
 };

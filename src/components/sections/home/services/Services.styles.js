@@ -10,7 +10,7 @@ export const Section = styled.section`
   background-color: ${(props) => props.theme.grey};
   overflow: hidden;
 
-  padding-bottom: 8rem;
+  padding-bottom: 12rem;
 
   @media (max-width: 805px) {
     margin-top: 10rem;
@@ -36,9 +36,9 @@ export const Container = styled.div`
 
   padding-top: 6rem;
 
-  @media (max-width: 950px) {
+  /* @media (max-width: 950px) {
     width: 95%;
-  }
+  } */
 `;
 
 export const HeadingSection = styled.div`
@@ -88,7 +88,7 @@ export const Expandable = styled.div`
   }
 
   @media (max-width: 990px) {
-    width: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }

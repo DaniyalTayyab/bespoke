@@ -12,6 +12,8 @@ export const Nav = styled.nav`
 
   box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.2);
 
+  position: relative;
+
   @media (max-width: 990px) {
     justify-content: space-between;
   }
@@ -74,7 +76,48 @@ export const ButtonSection = styled.div`
 
 export const MenuIcon = styled.span`
   display: none;
+
+  cursor: pointer;
+
   @media (max-width: 990px) {
     display: inline-block;
   }
+`;
+
+export const Drawer = styled.div`
+  display: ${(props) => (props.hidden ? "block" : "none")};
+  width: 100%;
+  height: 20rem;
+
+  position: absolute;
+
+  z-index: 100;
+
+  top: 7rem;
+  left: 0;
+  right: 0;
+
+  background-color: ${(props) => props.theme.body};
+`;
+
+export const DrawerMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.4rem;
+`;
+
+export const DrawerMenuItem = styled.div`
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #e7e7e7;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
 `;

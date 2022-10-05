@@ -11,7 +11,7 @@ const ToolAndTech = ({ title, iconsArray }) => {
       <IconsContainer>
         {iconsArray?.map((item, index) => (
           <Icon key={index}>
-            <img src={img} alt="not found" />
+            <img src={item} alt="not found" />
           </Icon>
         ))}
       </IconsContainer>

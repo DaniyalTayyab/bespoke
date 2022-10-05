@@ -7,6 +7,9 @@ import {
   MenuItem,
   ButtonSection,
   MenuIcon,
+  Drawer,
+  DrawerMenu,
+  DrawerMenuItem,
 } from "./Navigation.styles";
 
 import Logo from "../../assets/icons/logo.png";
@@ -18,8 +21,30 @@ import { IoMenuOutline } from "react-icons/io5";
 import Button from "../button/Button";
 
 const Navigation = () => {
+  const [hidden, setHidden] = useState(false);
+
+  const toggleDrawer = () => {
+    setHidden((prevState) => !prevState);
+  };
+
   return (
     <Nav>
+      <Drawer hidden={hidden}>
+        <DrawerMenu>
+          <DrawerMenuItem>
+            Company <AiFillCaretDown />
+          </DrawerMenuItem>
+          <DrawerMenuItem>
+            Services <AiFillCaretDown />
+          </DrawerMenuItem>
+          <DrawerMenuItem>
+            Solution <AiFillCaretDown />
+          </DrawerMenuItem>
+          <DrawerMenuItem>
+            Resources <AiFillCaretDown />
+          </DrawerMenuItem>
+        </DrawerMenu>
+      </Drawer>
       <LogoContainer>
         <img src={Logo} alt="techilab" />
       </LogoContainer>
@@ -40,7 +65,10 @@ const Navigation = () => {
       <ButtonSection>
         <Button>Contact</Button>
         <MenuIcon>
-          <IoMenuOutline style={{ fontSize: "2.5rem" }} />
+          <IoMenuOutline
+            onClick={toggleDrawer}
+            style={{ fontSize: "2.5rem" }}
+          />
         </MenuIcon>
         <BsSearch style={{ fontSize: "1.7rem" }} />
       </ButtonSection>

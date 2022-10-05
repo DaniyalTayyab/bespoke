@@ -48,4 +48,8 @@ export const ToolsContainer = styled.div`
   display: flex;
   row-gap: 3rem;
   column-gap: 2rem;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+  }
 `;
