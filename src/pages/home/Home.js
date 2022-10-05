@@ -1,4 +1,5 @@
 import React from "react";
+import Chat from "../../components/chat/Chat";
 import About from "../../components/sections/home/about/About";
 import Contact from "../../components/sections/home/contact/Contact";
 import Experience from "../../components/sections/home/experience/Experience";
@@ -22,6 +23,7 @@ const Home = () => {
       <ToolsTechnology />
       <Faq />
       <Contact />
+      <Chat />
     </>
   );
 };
