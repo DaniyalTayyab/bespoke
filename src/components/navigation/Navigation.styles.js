@@ -129,6 +129,10 @@ export const SearchBarContainer = styled.div`
   position: absolute;
 
   right: 3rem;
+
+  @media (max-width: 500px) {
+    width: 70%;
+  }
 `;
 
 export const SearchBarWrapper = styled.div`
@@ -147,5 +151,13 @@ export const SearchBarWrapper = styled.div`
     width: 92%;
     height: 4rem;
     padding: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+  }
+
+  @media (max-width: 500px) {
+    input {
+      width: 70%;
+    }
   }
 `;
