@@ -10,6 +10,8 @@ import {
   Drawer,
   DrawerMenu,
   DrawerMenuItem,
+  SearchBarContainer,
+  SearchBarWrapper,
 } from "./Navigation.styles";
 
 import Logo from "../../assets/icons/logo.png";
@@ -19,12 +21,19 @@ import { BsSearch } from "react-icons/bs";
 import { IoMenuOutline } from "react-icons/io5";
 
 import Button from "../button/Button";
+import { ImCross } from "react-icons/im";
 
 const Navigation = () => {
   const [hidden, setHidden] = useState(false);
+  const [searchBar, setSearchBar] = useState(false);
 
   const toggleDrawer = () => {
     setHidden((prevState) => !prevState);
+  };
+
+  const toggleSearchBar = () => {
+    setSearchBar(!searchBar);
+    console.log(searchBar);
   };
 
   return (
@@ -70,7 +79,16 @@ const Navigation = () => {
             style={{ fontSize: "2.5rem" }}
           />
         </MenuIcon>
-        <BsSearch style={{ fontSize: "1.7rem" }} />
+        <BsSearch onClick={toggleSearchBar} style={{ fontSize: "1.7rem" }} />
+        <SearchBarContainer hidden={searchBar}>
+          <SearchBarWrapper>
+            <input placeholder="Search insights, services and case studies" />
+            <ImCross
+              onClick={toggleSearchBar}
+              style={{ color: "red", fontSize: "2rem", cursor: "pointer" }}
+            />
+          </SearchBarWrapper>
+        </SearchBarContainer>
       </ButtonSection>
     </Nav>
   );

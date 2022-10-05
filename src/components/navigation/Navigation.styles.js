@@ -121,3 +121,31 @@ export const DrawerMenuItem = styled.div`
   font-size: 1.4rem;
   font-weight: 700;
 `;
+
+export const SearchBarContainer = styled.div`
+  display: ${(props) => (props.hidden ? "block" : "none")};
+  width: 80%;
+  height: 6rem;
+  position: absolute;
+
+  right: 3rem;
+`;
+
+export const SearchBarWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  right: 6rem;
+
+  padding: 0 2rem;
+
+  input {
+    width: 92%;
+    height: 4rem;
+    padding: 0 1rem;
+  }
+`;
