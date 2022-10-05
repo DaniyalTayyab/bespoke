@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         box-sizing: border-box;
-        font-family: "Sora", sans-serif;    
+        font-family: "Larsseit", sans-serif;    
     }
 
     html {

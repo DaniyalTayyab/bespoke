@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: 100vh;
+  height: 55rem;
   width: 100%;
 
   display: flex;
@@ -12,6 +12,10 @@ export const Section = styled.section`
   overflow: hidden;
 
   padding-bottom: 3rem;
+
+  @media (max-width: 770px) {
+    height: 103rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -31,16 +35,29 @@ export const HeadingSection = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 2.9rem;
+    font-size: 3.3rem;
 
     span {
       font-weight: 100;
+      opacity: 0.7;
+    }
+  }
+
+  @media (max-width: 770px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 2.2rem;
     }
   }
 `;
 
 export const ExperienceSection = styled.div`
-  width: 100%;
+  width: 80%;
   margin-top: 5rem;
 
   display: flex;
@@ -48,4 +65,24 @@ export const ExperienceSection = styled.div`
   align-items: center;
 
   padding: 1rem 0;
+
+  @media (max-width: 1440px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1240px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1150px) {
+    width: 97%;
+  }
+
+  @media (max-width: 1120px) {
+    width: 97%;
+  }
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+  }
 `;

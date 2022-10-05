@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: auto;
   width: 100%;
 
   display: flex;
@@ -11,7 +10,19 @@ export const Section = styled.section`
   background-color: ${(props) => props.theme.grey};
   overflow: hidden;
 
-  padding-bottom: 3rem;
+  padding-bottom: 8rem;
+
+  @media (max-width: 805px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 610px) {
+    margin-top: 20rem;
+  }
+
+  @media (max-width: 330px) {
+    margin-top: 25rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -24,6 +35,10 @@ export const Container = styled.div`
   align-items: center;
 
   padding-top: 6rem;
+
+  @media (max-width: 950px) {
+    width: 95%;
+  }
 `;
 
 export const HeadingSection = styled.div`
@@ -43,18 +58,42 @@ export const HeadingSection = styled.div`
     font-weight: 100;
     margin-top: 1.5rem;
   }
+
+  @media (max-width: 990px) {
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const Expandable = styled.div`
-  width: 90%;
+  width: 80%;
   margin-top: 5rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
 
-  row-gap: 2rem;
+  row-gap: 1rem;
   column-gap: 3rem;
 
   padding: 1rem 0;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+
+  @media (max-width: 990px) {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `;

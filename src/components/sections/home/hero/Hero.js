@@ -8,17 +8,10 @@ const Hero = () => {
     <Section>
       <Left />
       <Right>
-        <img
-          src={background}
-          alt="hero"
-          style={{ width: "100%", height: "100%" }}
-        />
+        <img src={background} alt="hero" />
       </Right>
       <TextSection>
-        <h1>
-          Techilab <br />
-          Software
-        </h1>
+        <h1>Techilab Software</h1>
         <span>Development</span>
         <p>
           Craft, integrate and maintain applications and software that fit your

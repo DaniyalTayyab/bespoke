@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Nav,
@@ -6,12 +6,14 @@ import {
   Menu,
   MenuItem,
   ButtonSection,
+  MenuIcon,
 } from "./Navigation.styles";
 
 import Logo from "../../assets/icons/logo.png";
 
 import { AiFillCaretDown } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
+import { IoMenuOutline } from "react-icons/io5";
 
 import Button from "../button/Button";
 
@@ -36,7 +38,11 @@ const Navigation = () => {
         </MenuItem>
       </Menu>
       <ButtonSection>
-        <Button>Contact</Button> <BsSearch style={{ fontSize: "1.7rem" }} />
+        <Button>Contact</Button>
+        <MenuIcon>
+          <IoMenuOutline style={{ fontSize: "2.5rem" }} />
+        </MenuIcon>
+        <BsSearch style={{ fontSize: "1.7rem" }} />
       </ButtonSection>
     </Nav>
   );

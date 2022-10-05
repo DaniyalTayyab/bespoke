@@ -11,6 +11,10 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
 
   box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 990px) {
+    justify-content: space-between;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -31,6 +35,10 @@ export const Menu = styled.ul`
   justify-content: space-between;
   width: 40rem;
   font-size: 1.4rem;
+
+  @media (max-width: 990px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.li`
@@ -57,4 +65,16 @@ export const ButtonSection = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 13rem;
+
+  @media (max-width: 990px) {
+    margin-right: 1rem;
+    width: 18rem;
+  }
+`;
+
+export const MenuIcon = styled.span`
+  display: none;
+  @media (max-width: 990px) {
+    display: inline-block;
+  }
 `;

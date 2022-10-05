@@ -10,13 +10,20 @@ export const Card = styled.div`
   height: 25rem;
 
   padding: 0.5rem;
+
+  @media (max-width: 770px) {
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const ImgContainer = styled.div`
   width: 30%;
 
   img {
-    width: 10rem;
+    width: 9rem;
   }
 `;
 
@@ -25,6 +32,6 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  line-height: 1.8;
 `;

@@ -15,12 +15,13 @@ const PeopleDriven = () => {
       <TextSection>
         <div style={{ lineHeight: "1.5" }}>
           <h2>Success story</h2>
-          <h1>People-driven retail</h1>
-          <span>Development</span>
+          <h1>
+            People-driven retail <span>Development</span>
+          </h1>
         </div>
         <p>
-          Craft, integrate and maintain applications and software that fit your
-          vision.
+          A textbook case of design thinking applied to re-architect Macy's
+          in-store technology ecosystem.
         </p>
         <Button>Read more</Button>
       </TextSection>

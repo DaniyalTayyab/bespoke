@@ -13,6 +13,11 @@ export const Container = styled.div`
   cursor: pointer;
 
   border: 1px solid #e5e5e5;
+
+  color: ${(props) =>
+    props.heading === "Managed Services" || props.heading === "Mobility"
+      ? "-100px"
+      : "0"};
 `;
 
 export const Title = styled.p`
@@ -28,7 +33,7 @@ export const Icon = styled.span`
 `;
 
 export const ExpandableContainer = styled.div`
-  display: ${(props) => (props.clicked ? "block" : "none")};
+  /* display: ${(props) => (props.clicked ? "block" : "none")}; */
   width: 100%;
   height: 23.5;
   background-color: ${(props) => props.theme.body};
@@ -46,5 +51,6 @@ export const SubHeading = styled.h3`
   font-size: 1.3rem;
   font-weight: 200;
   margin-top: 1rem;
-  line-height: 1.5;
+  line-height: 1.8;
+  opacity: 0.8;
 `;

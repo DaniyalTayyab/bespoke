@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
+  height: 50rem;
 
   display: flex;
 
@@ -11,26 +11,37 @@ export const Section = styled.section`
 `;
 
 export const Left = styled.div`
-  flex: 1;
+  flex: 1 2 auto;
   min-height: 100%;
   background-color: #f7f7f7;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const Right = styled.div`
-  flex: 3;
+  flex: 2.2;
   min-height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const TextSection = styled.div`
   position: absolute;
   background-color: white;
-  width: 40%;
-  height: 85%;
+  width: 55rem;
+  min-height: 40.4rem;
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
 
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 12%;
 
-  box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 
   display: flex;
@@ -39,12 +50,16 @@ export const TextSection = styled.div`
   align-items: flex-start;
   padding-left: 3rem;
 
+  overflow-wrap: break-word;
+
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 1;
+    margin-top: -5rem;
   }
 
   span {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 1px;
   }
 
@@ -53,5 +68,33 @@ export const TextSection = styled.div`
     width: 80%;
     margin-top: 4rem;
     opacity: 0.6;
+  }
+
+  @media (max-width: 1400px) {
+    width: 42rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    span {
+      font-size: 4rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    left: 20px;
+  }
+
+  @media (max-width: 770px) {
+    width: 80%;
+    min-height: 1px;
+  }
+
+  @media (max-width: 410px) {
+    span {
+      font-size: 3rem;
+    }
   }
 `;
