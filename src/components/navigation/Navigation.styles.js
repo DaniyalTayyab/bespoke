@@ -91,7 +91,7 @@ export const Drawer = styled.div`
 
   position: absolute;
 
-  z-index: 100;
+  z-index: 9;
 
   top: 7rem;
   left: 0;

@@ -1,15 +1,12 @@
 import React from "react";
 
 import { Section, Left, Right, TextSection } from "./Hero.styles";
-import background from "../../../../assets/imgs/hero-image.jpg";
 
 const Hero = () => {
   return (
     <Section>
       <Left />
-      <Right>
-        <img src={background} alt="hero" />
-      </Right>
+      <Right />
       <TextSection>
         <h1>Techilab Software</h1>
         <span>Development</span>

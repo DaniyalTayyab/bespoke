@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import background from "../../../../assets/imgs/hero-image.jpg";
+import backgroundImage from "../../../../assets/imgs/background.jpg";
 
 export const Section = styled.section`
   width: 100%;
@@ -24,10 +24,15 @@ export const Right = styled.div`
   flex: 2.2;
   min-height: 100%;
 
-  img {
-    width: 100%;
+  background: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+
+  /* img {
+    min-width: 100%;
     height: 100%;
-  }
+    background-size: cover;
+  } */
 `;
 
 export const TextSection = styled.div`

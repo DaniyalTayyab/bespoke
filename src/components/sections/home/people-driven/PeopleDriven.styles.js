@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import people from "../../../../assets/imgs/people.jpg";
 
 export const Section = styled.section`
   display: flex;
@@ -16,6 +17,10 @@ export const Section = styled.section`
 export const Background = styled.div`
   width: 100%;
   height: 100%;
+
+  background-image: url(${people});
+  background-position: center;
+  background-size: cover;
 
   img {
     width: 100%;

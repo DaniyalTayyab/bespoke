@@ -4,14 +4,10 @@ import Button from "../../../button/Button";
 
 import { Background, Section, TextSection } from "./PeopleDriven.styles";
 
-import img from "../../../../assets/imgs/people.jpg";
-
 const PeopleDriven = () => {
   return (
     <Section>
-      <Background>
-        <img src={img} alt="not found" />
-      </Background>
+      <Background></Background>
       <TextSection>
         <div style={{ lineHeight: "1.5" }}>
           <h2>Success story</h2>
