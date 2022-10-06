@@ -62,11 +62,19 @@ const ToolsTechnology = () => {
         <ToolsContainer>
           <div style={{ flex: "1" }}>
             <ToolAndTech
-              title="Devices"
-              iconsArray={[mobile, gear, lcd, iot, arcade]}
-              style={{ gridRow: "1 / 2" }}
+              title="Methodology"
+              iconsArray={[agile, gol, kanban, safe, xp]}
             />
-
+            <ToolAndTech
+              title="Persistence"
+              iconsArray={[mongo, mysql, sql, oracle, ibm]}
+            />
+            <ToolAndTech
+              title="Business logic"
+              iconsArray={[dotnet, java, node, python, roll, ruby]}
+            />
+          </div>
+          <div style={{ flex: "1" }}>
             <ToolAndTech
               title="Presentation"
               iconsArray={[
@@ -85,22 +93,13 @@ const ToolsTechnology = () => {
               style={{ gridRow: "2 / 4" }}
             />
             <ToolAndTech
-              title="Business logic"
-              iconsArray={[dotnet, java, node, python, roll, ruby]}
-            />
-          </div>
-          <div style={{ flex: "1" }}>
-            <ToolAndTech
               title="Frameworks"
               iconsArray={[spring, threed, empress]}
             />
             <ToolAndTech
-              title="Persistence"
-              iconsArray={[mongo, mysql, sql, oracle, ibm]}
-            />
-            <ToolAndTech
-              title="Methodology"
-              iconsArray={[agile, gol, kanban, safe, xp]}
+              title="Devices"
+              iconsArray={[mobile, gear, lcd, iot, arcade]}
+              style={{ gridRow: "1 / 2" }}
             />
           </div>
         </ToolsContainer>

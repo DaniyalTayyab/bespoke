@@ -13,7 +13,6 @@ export const Card = styled.div`
 
   @media (max-width: 770px) {
     width: 100%;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
   }
