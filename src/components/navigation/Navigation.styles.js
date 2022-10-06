@@ -27,6 +27,8 @@ export const LogoContainer = styled.div`
   width: 10rem;
   height: 100%;
 
+  cursor: pointer;
+
   img {
     width: 6rem;
   }

@@ -5,6 +5,10 @@ import Button from "../../../button/Button";
 import { Background, Section, TextSection } from "./PeopleDriven.styles";
 
 const PeopleDriven = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <Section>
       <Background></Background>
@@ -19,7 +23,13 @@ const PeopleDriven = () => {
           A textbook case of design thinking applied to re-architect Macy's
           in-store technology ecosystem.
         </p>
-        <Button>Read more</Button>
+        <div
+          onClick={() =>
+            openInNewTab("http://techilab.com/mission-vision-and-values/")
+          }
+        >
+          <Button>Read more</Button>
+        </div>
       </TextSection>
     </Section>
   );

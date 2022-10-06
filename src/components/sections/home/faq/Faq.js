@@ -16,7 +16,7 @@ const Faq = () => {
       <Container>
         <HeadingSection>
           <h2>
-            <span>Got more questions about</span> Bespoke Software Development?
+            <span>Got more questions about</span> TechiLab Software Development?
           </h2>
           <h3>Here's everything you need to know​</h3>
         </HeadingSection>

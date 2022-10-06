@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.footer`
   height: 65rem;
   width: 100%;
-  background-color: ${(props) => props.theme.body};
+  background-color: ${(props) => props.theme.grey};
   color: ${(props) => props.theme.text};
 
   display: flex;
@@ -43,9 +43,6 @@ export const ColumnOneWrapper = styled.div`
 `;
 
 export const ColumnOne = styled.div`
-  /* flex: 1.3; */
-  /* height: 100%; */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -141,6 +138,9 @@ export const Column = styled.div`
 
     li {
       cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 `;

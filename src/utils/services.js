@@ -10,7 +10,7 @@ const services = [
     title: "Mobility",
     heading: "Intuitive and interactive applications to scale your business​",
     subHeading:
-      "At Confiz, we are proficient in developing Android, iOS, native, hybrid, cross platform mobile applications as well as progressive web apps, enabling and empowering businesses. We leverage industry best practices, latest technology and tools and our vast industry knowledge to create high performing applications that deliver on their business promise. ​",
+      "At TechiLab, we are proficient in developing Android, iOS, native, hybrid, cross platform mobile applications as well as progressive web apps, enabling and empowering businesses. We leverage industry best practices, latest technology and tools and our vast industry knowledge to create high performing applications that deliver on their business promise. ​",
   },
   {
     title: "Solution strategy",

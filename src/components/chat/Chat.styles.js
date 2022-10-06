@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   border-radius: 50%;
 
-  background-color: green;
+  background-color: ${(props) => props.theme.primary};
 
   display: flex;
   justify-content: center;
@@ -18,4 +18,6 @@ export const Container = styled.div`
 
   color: white;
   font-size: 2rem;
+
+  cursor: pointer;
 `;
