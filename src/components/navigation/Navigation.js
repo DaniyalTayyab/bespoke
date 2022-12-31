@@ -58,79 +58,53 @@ const Navigation = () => {
       <Drawer hidden={hidden}>
         <DrawerMenu>
           <DrawerMenuItem
-            onClick={
-              (toggleComapany,
-              () => openInNewTab(" http://techilab.com/about/"))
-            }
+          // onClick={
+          //   (toggleComapany,
+          //   () => openInNewTab(" http://techilab.com/about/"))
+          // }
           >
             Company <AiFillCaretDown />
           </DrawerMenuItem>
-          <DrawerMenuItem
-            onClick={
-              (toggleServices,
-              () => openInNewTab("http://techilab.com/it-services/"))
-            }
-          >
+          <DrawerMenuItem>
             Services <AiFillCaretDown />
           </DrawerMenuItem>
-          <DrawerMenuItem
-            onClick={
-              (toggleSolutions,
-              () => openInNewTab("http://techilab.com/industries/"))
-            }
-          >
+          <DrawerMenuItem>
             Solution <AiFillCaretDown />
           </DrawerMenuItem>
-          <DrawerMenuItem
-            onClick={
-              (toggleResources,
-              () => openInNewTab("http://techilab.com/it-blog/"))
-            }
-          >
+          <DrawerMenuItem>
             IT Blog <AiFillCaretDown />
           </DrawerMenuItem>
         </DrawerMenu>
       </Drawer>
-      <LogoContainer onClick={() => openInNewTab("http://techilab.com/")}>
-        <img src={Logo} alt="techilab" />
+      <LogoContainer>
+        <Link to="/">
+          <img src={Logo} alt="Daniyal" />
+        </Link>
       </LogoContainer>
       <Menu>
         <MenuItem
-          onClick={
-            (toggleComapany, () => openInNewTab(" http://techilab.com/about/"))
-          }
+          // onClick={
+          //   (toggleComapany, () => openInNewTab(" http://techilab.com/about/"))
+          // }
+          onClick={toggleComapany}
         >
           <span>Company</span> <AiFillCaretDown />
         </MenuItem>
-        <MenuItem
-          onClick={
-            (toggleServices,
-            () => openInNewTab("http://techilab.com/it-services/"))
-          }
-        >
+        <MenuItem onClick={toggleServices}>
           <span>Services</span> <AiFillCaretDown />
         </MenuItem>
-        <MenuItem
-          onClick={
-            (toggleSolutions,
-            () => openInNewTab("http://techilab.com/industries/"))
-          }
-        >
+        <MenuItem onClick={toggleSolutions}>
           <span>Solution</span> <AiFillCaretDown />
         </MenuItem>
-        <MenuItem
-          onClick={
-            (toggleResources,
-            () => openInNewTab("http://techilab.com/it-blog/"))
-          }
-        >
+        <MenuItem onClick={toggleResources}>
           <span>IT Blog</span> <AiFillCaretDown />
         </MenuItem>
       </Menu>
       <ButtonSection>
-        <div onClick={() => openInNewTab("http://techilab.com/contact-us/")}>
+        <Link to="/contact-us">
           <Button>Contact</Button>
-        </div>
+        </Link>
+
         <MenuIcon>
           <IoMenuOutline
             onClick={toggleDrawer}
@@ -150,10 +124,10 @@ const Navigation = () => {
       </ButtonSection>
 
       {/* submenues */}
-      {/* <Company hidden={company} />
+      <Company hidden={company} />
       <Services hidden={services} />
       <Solutions hidden={solutions} />
-      <Resources hidden={resources} /> */}
+      <Resources hidden={resources} />
     </Nav>
   );
 };

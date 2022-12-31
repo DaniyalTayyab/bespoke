@@ -24,9 +24,9 @@ const PeopleDriven = () => {
           in-store technology ecosystem.
         </p>
         <div
-          onClick={() =>
-            openInNewTab("http://techilab.com/mission-vision-and-values/")
-          }
+        // onClick={() =>
+        //   openInNewTab("http://techilab.com/mission-vision-and-values/")
+        // }
         >
           <Button>Read more</Button>
         </div>

@@ -60,145 +60,35 @@ const Footer = () => {
           <Column>
             <h3>Services</h3>
             <ul>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/blockchain/")
-                }
-              >
-                Blockchain
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab(
-                    "http://techilab.com/it-services/web-app-development/"
-                  )
-                }
-              >
-                Web App Development
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab(
-                    "http://techilab.com/it-services/it-consultancy/"
-                  )
-                }
-              >
-                IT Consultancy
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/devops/")
-                }
-              >
-                DevOps
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/shopify/")
-                }
-              >
-                Shopify
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/aws/")
-                }
-              >
-                AWS
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/data-science/")
-                }
-              >
-                Data Science & AI
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/it-services/iot/")
-                }
-              >
-                Internet Of Things
-              </li>
+              <li onClick={() => openInNewTab("#")}>Blockchain</li>
+              <li onClick={() => openInNewTab("#")}>Web App Development</li>
+              <li onClick={() => openInNewTab("#")}>IT Consultancy</li>
+              <li onClick={() => openInNewTab("#")}>DevOps</li>
+              <li onClick={() => openInNewTab("#")}>Shopify</li>
+              <li onClick={() => openInNewTab("#")}>AWS</li>
+              <li onClick={() => openInNewTab("#")}>Data Science & AI</li>
+              <li onClick={() => openInNewTab("#")}>Internet Of Things</li>
             </ul>
           </Column>
           <Column>
             <h3>Solutions</h3>
             <ul>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/industries/banking/")
-                }
-              >
-                Banking
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab(
-                    "http://techilab.com/industries/capital-markets/"
-                  )
-                }
-              >
-                Capital Markets
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab(
-                    "http://techilab.com/industries/enterprise-technology/"
-                  )
-                }
-              >
-                Enterprise Technology
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/industries/manufacturing/")
-                }
-              >
-                Manufacturing
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/industries/healthcare/")
-                }
-              >
-                Healthcare
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab(
-                    "http://techilab.com/industries/higher-education/"
-                  )
-                }
-              >
-                Higher Education
-              </li>
+              <li onClick={() => openInNewTab("#")}>Banking</li>
+              <li onClick={() => openInNewTab("#")}>Capital Markets</li>
+              <li onClick={() => openInNewTab("#")}>Enterprise Technology</li>
+              <li onClick={() => openInNewTab("#")}>Manufacturing</li>
+              <li onClick={() => openInNewTab("#")}>Healthcare</li>
+              <li onClick={() => openInNewTab("#")}>Higher Education</li>
             </ul>
           </Column>
           <Column>
             <h3>Company</h3>
             <ul>
-              <li onClick={() => openInNewTab("http://techilab.com/about/")}>
-                About
-              </li>
-              <li onClick={() => openInNewTab("http://techilab.com/it-blog/")}>
-                IT Blog
-              </li>
-              <li
-                onClick={() =>
-                  openInNewTab("http://techilab.com/case-studies/")
-                }
-              >
-                Case Sttudies
-              </li>
-              <li
-                onClick={() => openInNewTab("http://techilab.com/locations/")}
-              >
-                Locations
-              </li>
-              <li onClick={() => openInNewTab("http://techilab.com/careers/")}>
-                Careers
-              </li>
+              <li onClick={() => openInNewTab("#")}>About</li>
+              <li onClick={() => openInNewTab("#")}>IT Blog</li>
+              <li onClick={() => openInNewTab("#")}>Case Sttudies</li>
+              <li onClick={() => openInNewTab("#")}>Locations</li>
+              <li onClick={() => openInNewTab("#")}>Careers</li>
             </ul>
           </Column>
         </ColumnWrapper>
@@ -209,22 +99,16 @@ const Footer = () => {
           reserved
         </Copyright>
         <SocailContainer>
-          <span
-            onClick={() =>
-              openInNewTab(
-                "https://www.linkedin.com/company/techilab/mycompany/"
-              )
-            }
-          >
+          <span onClick={() => openInNewTab("#")}>
             <FaLinkedin />
           </span>
-          <span onClick={() => openInNewTab("http://techilab.com/about/")}>
+          <span onClick={() => openInNewTab("#")}>
             <FaFacebookF />
           </span>
-          <span onClick={() => openInNewTab("http://techilab.com/about/")}>
+          <span onClick={() => openInNewTab("#")}>
             <FaTwitter />
           </span>
-          <span onClick={() => openInNewTab("http://techilab.com/about/")}>
+          <span onClick={() => openInNewTab("#")}>
             <FaYoutube />
           </span>
         </SocailContainer>

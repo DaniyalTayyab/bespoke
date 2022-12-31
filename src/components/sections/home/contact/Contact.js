@@ -16,7 +16,9 @@ const Contact = () => {
         helps you transform and succeed using technology, insights, and
         innovation.
       </p>
-      <div onClick={() => openInNewTab("http://techilab.com/contact-us/")}>
+      <div
+      //  onClick={() => openInNewTab("http://techilab.com/contact-us/")}
+      >
         <Button>Get in touch</Button>
       </div>
     </Section>
